@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lodgify-RPS-Server", "lodgify-RPS-Server\lodgify-RPS-Server.csproj", "{28EEEA9C-1002-4883-A196-9D50A2831C6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lodgify-RPS-Server.Tests", "lodgify-RPS-Server.Tests\lodgify-RPS-Server.Tests.csproj", "{6991BD73-29BB-484D-8D76-DBC9F2576111}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28EEEA9C-1002-4883-A196-9D50A2831C6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28EEEA9C-1002-4883-A196-9D50A2831C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28EEEA9C-1002-4883-A196-9D50A2831C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28EEEA9C-1002-4883-A196-9D50A2831C6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6991BD73-29BB-484D-8D76-DBC9F2576111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6991BD73-29BB-484D-8D76-DBC9F2576111}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6991BD73-29BB-484D-8D76-DBC9F2576111}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6991BD73-29BB-484D-8D76-DBC9F2576111}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
+	EndGlobalSection
+EndGlobal
