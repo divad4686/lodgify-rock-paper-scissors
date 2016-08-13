@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="Lodgify-RPS" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\David\ Martinez\\Documents\\Programacion\\Entrevistas\\Lodgify\\lodgify-rock-paper-scissors\\lodgify-RPS-Server\\lodgify-RPS-Server\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\David\ Martinez\\Documents\\Programacion\\Entrevistas\\Lodgify\\lodgify-rock-paper-scissors\\lodgify-RPS-Server\\lodgify-RPS-Server\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+</parameters>
