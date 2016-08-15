@@ -33,7 +33,12 @@ namespace lodgify_RPS_Server.Controllers
 
 
                 var result = new { result = "success", winner = gameResultString };
-                return Json(result,JsonRequestBehavior.AllowGet);
+
+                return new JsonpResult
+                {
+                    Data = result
+                };
+               // return Json(result,JsonRequestBehavior.AllowGet);
             }
             catch (ArgumentException)
             {
