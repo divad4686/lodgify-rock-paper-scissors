@@ -38,17 +38,22 @@ namespace lodgify_RPS_Server.Controllers
                 {
                     Data = result
                 };
-               // return Json(result,JsonRequestBehavior.AllowGet);
             }
             catch (ArgumentException)
             {
                 var result = new { result = "error", message = "wrong parameter" };
-                return Json(result, JsonRequestBehavior.AllowGet);
+                return new JsonpResult
+                {
+                    Data = result
+                };               
             }
             catch (Exception)
             {
                 var result = new { result = "error", message = "unknown error" };
-                return Json(result, JsonRequestBehavior.AllowGet);
+                return new JsonpResult
+                {
+                    Data = result
+                };
             }
         }
     }
