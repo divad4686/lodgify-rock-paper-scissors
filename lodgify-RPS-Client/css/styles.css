@@ -59,3 +59,18 @@
 
     figure img { border:1px solid #000; }
 }
+
+.player{
+    margin-top: 100px;
+}
+
+.playOption{
+    width:100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.userOptions{
+    margin-left: 200px;
+    margin-top: 30px;
+}

@@ -22,42 +22,70 @@
 
     <!-- Include the HTML5 shiv print polyfill for Internet Explorer browsers 8 and below -->
     <!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- JQuery -->
+    <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- My main javascript -->
+    <script src="js/main.js"></script>
+
+
 </head>
 <body>
+    <div class="container">
+        <!-- The page header typically contains items such as your site heading, logo and possibly the main site navigation -->
+        <!-- ARIA: the landmark role "banner" is set as it is the prime heading or internal title of the page -->
+        <header role="banner">
 
-    <!-- The page header typically contains items such as your site heading, logo and possibly the main site navigation -->
-    <!-- ARIA: the landmark role "banner" is set as it is the prime heading or internal title of the page -->
-    <header role="banner">
+            <h1><abbr title="HyperText Markup Language 5">Play</abbr> Rock - Paper -Scissors!</h1>
 
-        <h1><abbr title="HyperText Markup Language 5">HTML5</abbr> Bones</h1>
+            <!-- ARIA: the landmark role "navigation" is added here as the element contains site navigation
+            NOTE: The <nav> element does not have to be contained within a <header> element, even though the two examples on this page are. -->
+            <nav role="navigation">
+                <!-- This can contain your site navigation either in an unordered list or even a paragraph that contains links that allow users to navigate your site -->
+            </nav>
 
-        <!-- ARIA: the landmark role "navigation" is added here as the element contains site navigation
-        NOTE: The <nav> element does not have to be contained within a <header> element, even though the two examples on this page are. -->
-        <nav role="navigation">
-            <!-- This can contain your site navigation either in an unordered list or even a paragraph that contains links that allow users to navigate your site -->
-        </nav>
+        </header>
 
-    </header>
+        <!-- If you want to use an element as a wrapper, i.e. for styling only, then <div> is still the element to use -->
+        <dic id="players" class="row">
+            <div id="user" class="player col-md-6">
+                <h2 id="userMessage" class="text-primary text-center">Pick your option</h2>
+                <div class="userOptions">
+                    <button type="button" class="playOption btn btn-default" value="rock">
+                        <img src="multimedia/rock.png" class="playOptionImage img-responsive" />     
+                    </button>
+                    <div class="clearfix"></div> 
+                    <button type="button" class="playOption btn btn-default" value="paper">
+                        <img src="multimedia/paper.jpg" class="playOptionImage img-responsive" />         
+                    </button>  
+                    <div class="clearfix"></div> 
+                    <button type="button" class="playOption btn btn-default" value="scissors">
+                        <img src="multimedia/scissors.jpg" class="playOptionImage img-responsive" />
+                    </button> 
+                </div>
+            </div>
+            <div id="robot" class="player col-md-6">                
+                <h2 id="robotTitle" class="text-danger text-center">Robot</h2>       
+                <h3 id="robotMessage" class="text-danger text-center"></h3>         
+            </div>
+        </dic>
 
-    <!-- If you want to use an element as a wrapper, i.e. for styling only, then <div> is still the element to use -->
-    <div class="wrap">
+        <!-- The main page footer can contain items such as copyright and contact information. It can also contain a duplicated navigation of your site which is not usually contained within a <nav> -->
+        <!-- ARIA: the landmark role "contentinfo" is added here as it contains metadata that applies to the parent document -->
+        <footer role="contentinfo">
 
-        <!-- The <main> element is used to enclose the main content, i.e. that which contains the central topic of a document -->
-        <!-- ARIA: the landmark role "main" is added here as it contains the main content of the document, and it is recommended to add it to the
-        <main> element until user agents implement the required role mapping. -->
-        <main role="main">
 
-            
-
-        </main>
+        </footer>
     </div>
-
-    <!-- The main page footer can contain items such as copyright and contact information. It can also contain a duplicated navigation of your site which is not usually contained within a <nav> -->
-    <!-- ARIA: the landmark role "contentinfo" is added here as it contains metadata that applies to the parent document -->
-    <footer role="contentinfo">
-
-
-    </footer>
 
 </body>
 </html>
